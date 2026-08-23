@@ -1,6 +1,14 @@
 {
-    "MyTask1": {},
-    "MyTask2": {},
+    "点击电": {
+        "recognition":"OCR",
+        "expected":"电",
+        "action":"Click"
+    },
+    "启动游戏": {
+        "recognition":"TemplateMatch",
+        "template":"hzsj.png",
+        "action":"Click"
+    },
     "MyTask3": {},
     "MyTask4": {
         "recognition": "Custom",
