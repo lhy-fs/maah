@@ -204,12 +204,50 @@
             "挣扎",
             "确定",
             "存在",
+            "同化",
             "放弃",
         ],
         "rate_limit": 3000,
         "timeout": 20000,
         "on_error": [
             "各种事件"
+        ]
+    },
+    "同化": {
+        "recognition": "OCR",
+        "expected": "同化",
+        "action": "DoNothing",
+        "pre_delay": 1000,
+        "timeout": 5000,
+        "next": [
+            "0费卡",
+            "1费卡",
+        ]
+    },
+    "0费卡": {
+        "recognition": "TemplateMatch",
+        "template": "0费卡.png",
+        "action": "Click",
+        "next": [
+            "确定"
+        ],
+        "timeout": 6000,
+        "on_error": [
+            "局内设置按钮",
+            "局内卡组按钮"
+        ]
+    },
+    "1费卡": {
+        "recognition": "TemplateMatch",
+        "template": "1费卡.png",
+        "action": "Click",
+        "next": [
+            "确定"
+        ],
+        "timeout": 6000,
+        "on_error": [
+            "局内设置按钮",
+            "局内卡组按钮"
         ]
     },
     "夜巡人的确认": {
