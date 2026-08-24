@@ -4,7 +4,31 @@
         "template": "局内设置按钮.png",
         "action": "Click",
         "next": [
-            "局内叉叉"
+            "局内卡组按钮"
+        ],
+        "on_error": [
+            "各种事件"
+        ]
+    },
+    "局内卡组按钮": {
+        "recognition": "TemplateMatch",
+        "template": "局内卡组按钮.png",
+        "action": "Click",
+        "next": [
+            "放弃这轮游戏"
+        ],
+        "on_error": [
+            "各种事件"
+        ]
+    },
+    "放弃这轮游戏": {
+        "recognition": "OCR",
+        "expected": "放弃这轮游戏",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "继续",
+            "各种事件"
         ]
     },
     "局内叉叉": {
