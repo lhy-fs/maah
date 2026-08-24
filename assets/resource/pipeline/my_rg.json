@@ -200,6 +200,29 @@
         "action": "Click",
         "repeat": 2,
         "next": [
+            "一键出牌黄",
+            "夜巡人的确认",
+            "离开地点",
+            "挣扎",
+            "确定",
+            "存在",
+            "同化",
+            "放弃",
+        ],
+        "rate_limit": 3000,
+        "timeout": 20000,
+        "on_error": [
+            "结束回合",
+            "局内设置按钮",
+            "局内卡组按钮"
+        ]
+    },
+    "一键出牌黄": {
+        "recognition": "TemplateMatch",
+        "template": "一键出牌黄.png",
+        "action": "Click",
+        "repeat": 2,
+        "next": [
             "一键出牌",
             "夜巡人的确认",
             "离开地点",
@@ -212,6 +235,20 @@
         "rate_limit": 3000,
         "timeout": 20000,
         "on_error": [
+            "结束回合",
+            "局内设置按钮",
+            "局内卡组按钮"
+        ]
+    },
+    "结束回合": {
+        "recognition": "OCR",
+        "expected": "结束回合",
+        "action": "Click",
+        "pre_delay": 1000,
+        "repeat": 2,
+        "max_hit": 3,
+        "repeat_delay": 1500,
+        "next": [
             "各种事件"
         ]
     },
