@@ -281,4 +281,15 @@
             "各种事件"
         ]
     },
+    "特殊卡牌加入卡组": {
+        "recognition": "OCR",
+        "expected": "特殊卡牌加入卡组",
+        "action": "Click",
+        "pre_delay": 1000,
+        "repeat": 2,
+        "repeat_delay": 1500,
+        "next": [
+            "各种事件"
+        ]
+    }
 }
