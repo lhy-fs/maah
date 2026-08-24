@@ -1,70 +1,11 @@
 {
     "下一步": {
         "recognition": "TemplateMatch",
-        "template": "下一步.png",
+        "template": "next/",
         "action": "Click",
         "repeat": 2,
         "repeat_delay": 1000,
-        "next": [
-            "各种事件"
-        ]
-    },
-    "下一步2": {
-        "recognition": "TemplateMatch",
-        "template": "下一步2.png",
-        "action": "Click",
-        "repeat_delay": 1000,
-        "repeat": 2,
-        "next": [
-            "各种事件"
-        ]
-    },
-    "下一步3": {
-        "recognition": "TemplateMatch",
-        "template": "下一步3.png",
-        "action": "Click",
-        "repeat_delay": 1000,
-        "repeat": 2,
-        "next": [
-            "各种事件"
-        ]
-    },
-    "下一步4": {
-        "recognition": "TemplateMatch",
-        "template": "下一步4.png",
-        "action": "Click",
-        "repeat_delay": 1000,
-        "repeat": 2,
-        "next": [
-            "各种事件"
-        ]
-    },
-    "下一步5": {
-        "recognition": "TemplateMatch",
-        "template": "下一步5.png",
-        "action": "Click",
-        "repeat_delay": 1000,
-        "repeat": 2,
-        "next": [
-            "各种事件"
-        ]
-    },
-    "下一步6": {
-        "recognition": "TemplateMatch",
-        "template": "下一步6.png",
-        "action": "Click",
-        "repeat_delay": 1000,
-        "repeat": 2,
-        "next": [
-            "各种事件"
-        ]
-    },
-    "下一步7": {
-        "recognition": "TemplateMatch",
-        "template": "下一步7.png",
-        "action": "Click",
-        "repeat_delay": 1000,
-        "repeat": 2,
+        "green_mask": true,
         "next": [
             "各种事件"
         ]

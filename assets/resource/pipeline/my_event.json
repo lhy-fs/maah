@@ -4,7 +4,7 @@
         "template": "紫色选项.png",
         "action": "Click",
         "pre_delay": 1000,
-        "repeat": 2,
+        "repeat": 3,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
