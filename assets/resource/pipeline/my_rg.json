@@ -111,7 +111,7 @@
         "recognition": "TemplateMatch",
         "template": "leave/",
         "action": "Click",
-        "rate_limit": 3000,
+        "rate_limit": 3001,
         "pre_delay": 1000,
         "next": [
             "直接离开",
