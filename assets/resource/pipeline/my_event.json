@@ -98,9 +98,9 @@
             "各种事件"
         ]
     },
-    "接触雷元素符文": {
+    "接触火元素符文": {
         "recognition": "OCR",
-        "expected": "接触雷元素符文",
+        "expected": "接触火元素符文",
         "action": "Click",
         "pre_delay": 1000,
         "repeat": 2,

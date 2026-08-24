@@ -5,6 +5,12 @@
         "action": "Click",
         "repeat": 4,
         "repeat_delay": 1000,
+        "target_offset": [
+            0,
+            10,
+            0,
+            0
+        ],
         "next": [
             "各种事件"
         ]
