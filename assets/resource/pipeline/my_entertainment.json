@@ -108,10 +108,19 @@
             "卡牌右上角",
             "卡牌右上角紫无框",
             "无畏斧卡牌",
-            "确定"
         ],
         "timeout": 10000,
         "on_error": [
+            "各种事件"
+        ]
+    },
+    "刻印返回": {
+        "recognition": "TemplateMatch",
+        "template": "刻印返回.png",
+        "action": "Click",
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "next": [
             "各种事件"
         ]
     },
