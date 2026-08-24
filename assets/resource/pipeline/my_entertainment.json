@@ -1,0 +1,78 @@
+{
+    //游艺界面
+    "被迫加入": {
+        "recognition": "OCR",
+        "expected": "被迫加入",
+        "action": "Click",
+        "next": [
+            "开始",
+            "转动轮盘",
+            "发射"
+        ]
+    },
+    "开始": {
+        "recognition": "OCR",
+        "expected": "开始",
+        "action": "Click",
+        "next": [
+            "选定了",
+            "选择你的奖励"
+        ]
+    },
+    "转动轮盘": {
+        "recognition": "OCR",
+        "expected": "转动轮盘",
+        "action": "Click",
+        "next": [
+            "停止"
+        ]
+    },
+    "发射": {
+        "recognition": "OCR",
+        "expected": "发射",
+        "action": "Click",
+        "next": [
+            "接受并离开"
+        ]
+    },
+    "停止": {
+        "recognition": "OCR",
+        "expected": "停止",
+        "action": "Click",
+        "next": [
+            "接受并离开"
+        ]
+    },
+    "选择你的奖励": {
+        "recognition": "OCR",
+        "expected": "选择你的奖励",
+        "action": "DoNothing",
+        "next": [
+            "翻牌"
+        ]
+    },
+    "翻牌": {
+        "recognition": "TemplateMatch",
+        "template": "翻牌.png",
+        "action": "Click",
+        "repeat": 2,
+        "repeat_delay": 1000,
+        "next": [
+            "接受并离开",
+            "卡牌右上角",
+            "卡牌右上角紫无框"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "各种事件"
+        ]
+    },
+    "选定了": {
+        "recognition": "OCR",
+        "expected": "选定了",
+        "action": "Click",
+        "next": [
+            "接受并离开"
+        ]
+    },
+}

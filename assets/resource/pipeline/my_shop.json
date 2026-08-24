@@ -1,0 +1,88 @@
+{
+    // 商店页面
+    "移除卡牌": {
+        "recognition": "OCR",
+        "expected": "移除卡牌",
+        "action": "Click",
+        "next": [
+            "移除卡牌界面",
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "离开地点"
+        ]
+    },
+    "移除卡牌界面": {
+        "action": "DoNothing",
+        "next": [
+            "原能卡牌",
+            "金块卡牌",
+            "负担卡牌"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "移除卡牌界面返回"
+        ]
+    },
+    "原能卡牌": {
+        "recognition": "TemplateMatch",
+        "template": "原能卡牌.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "销毁"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "移除卡牌界面返回"
+        ]
+    },
+    "负担卡牌": {
+        "recognition": "TemplateMatch",
+        "template": "负担卡牌.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "销毁"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "移除卡牌界面返回"
+        ]
+    },
+    "金块卡牌": {
+        "recognition": "TemplateMatch",
+        "template": "金块卡牌.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "销毁"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "移除卡牌界面返回"
+        ]
+    },
+    "销毁": {
+        "recognition": "TemplateMatch",
+        "template": "销毁.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "移除卡牌界面"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "移除卡牌界面返回"
+        ]
+    },
+    "移除卡牌界面返回": {
+        "recognition": "TemplateMatch",
+        "template": "移除卡牌界面返回.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "地图页面"
+        ]
+    },
+}

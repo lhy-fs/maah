@@ -1,0 +1,264 @@
+{
+    "启动祭坛": {
+        "recognition": "TemplateMatch",
+        "template": "启动祭坛.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "坠入深境"
+        ]
+    },
+    "滑动难度": {
+        "action": "Swipe",
+        "begin": [
+            1000,
+            500,
+            10,
+            10
+        ],
+        "end": [
+            100,
+            500,
+            10,
+            10
+        ],
+        "repeat": 3,
+        "repeat_delay": 1000,
+        "next": [
+            "坠入深境"
+        ]
+    },
+    "坠入深境": {
+        "recognition": "OCR",
+        "expected": "坠入深境",
+        "pre_delay": 1000,
+        "action": "Click",
+        "next": [
+            "各种事件"
+        ]
+    },
+    "各种事件": {
+        "action": "DoNothing",
+        "timeout": 3000,
+        "rate_limit": 1000,
+        "next": [
+            "一键出牌",
+            "坠入",
+            "激活护符",
+            "被迫加入",
+            "移除卡牌",
+            "离开地点",
+            "前往",
+            "点击空白"
+        ],
+        "on_error": [
+            "稀有事件"
+        ]
+    },
+    "稀有事件": {
+        "timeout": 3000,
+        "next": [
+            "紫色选项",
+            "坠入",
+            "废墟",
+            "秘密实验室",
+            "我拒绝",
+            "电音歌手",
+            "叹息者",
+            "元素石碑",
+            "困兽",
+            "达成交易",
+            "大力出奇迹",
+            "尽可能快的离开",
+            "不要吃来路不明的东西",
+            "尝试修理它",
+            "翻看四周",
+            "行个方便",
+            "拂去它上面的落叶",
+            "接受并离开",
+            "挣扎",
+            "放弃",
+            "存在",
+            "不留"
+        ],
+        "on_error": [
+            "地图页面"
+        ]
+    },
+    "离开地点": {
+        "recognition": "OCR",
+        "expected": "离开地点",
+        "action": "Click",
+        "rate_limit": 3000,
+        "pre_delay": 1000,
+        "next": [
+            "直接离开",
+            "地图页面",
+            "各种事件",
+        ]
+    },
+    "直接离开": {
+        "recognition": "OCR",
+        "expected": "直接离开",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "地图页面"
+        ]
+    },
+    "地图页面": {
+        "action": "DoNothing",
+        "next": [
+            "坠入",
+            "前往",
+            "直接离开",
+            "激活护符",
+            "离开地点",
+            "下一步",
+            "下一步2",
+            "下一步3",
+            "下一步4",
+            "下一步5",
+            "下一步6",
+            "下一步7",
+        ],
+        "rate_limit": 500,
+        "timeout": 10000,
+        "on_error": [
+            "各种事件"
+        ]
+    },
+    "坠入": {
+        "recognition": "TemplateMatch",
+        "template": "坠入.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "repeat_delay": 1500,
+        "repeat": 2,
+        "next": [
+            "卡牌右上角",
+            "卡牌右上角紫无框",
+            "无畏斧卡牌"
+        ],
+        "timeout": 3000,
+        "on_error": [
+            "离开地点"
+        ]
+    },
+    "点击空白": {
+        "recognition": "OCR",
+        "expected": "点击空白",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "各种事件"
+        ]
+    },
+    "前往": {
+        "recognition": "OCR",
+        "expected": "前往",
+        "action": "Click",
+        "pre_delay": 1000,
+        "repeat": 2,
+        "repeat_delay": 1500,
+        "next": [
+            "各种事件"
+        ]
+    },
+    "一键出牌": {
+        "recognition": "TemplateMatch",
+        "template": "一键出牌.png",
+        "action": "Click",
+        "next": [
+            "一键出牌",
+            "离开地点"
+        ],
+        "timeout": 15000,
+        "rate_limit": 3000,
+        "on_error": [
+            "各种事件"
+        ]
+    },
+    "挣扎": {
+        "recognition": "OCR",
+        "expected": "挣扎",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "各种事件"
+        ]
+    },
+    "放弃": {
+        "recognition": "OCR",
+        "expected": "放弃",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "存在"
+        ]
+    },
+    "存在": {
+        "recognition": "OCR",
+        "expected": "存在",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "不留"
+        ]
+    },
+    "不留": {
+        "recognition": "OCR",
+        "expected": "不留",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "继续"
+        ]
+    },
+    "接受并离开": {
+        "recognition": "OCR",
+        "expected": "接受并离开",
+        "action": "Click",
+        "next": [
+            "各种事件"
+        ]
+    },
+    "继续": {
+        "recognition": "OCR",
+        "expected": "继续",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "点击任意空白处关闭"
+        ]
+    },
+    "点击任意空白处关闭": {
+        "recognition": "OCR",
+        "expected": "点击任意空白处关闭",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "点击任意空白处关闭",
+            "结束此次探索"
+        ]
+    },
+    "结束此次探索": {
+        "recognition": "OCR",
+        "expected": "结束此次探索",
+        "action": "Click",
+        "pre_delay": 1000,
+        "timeout": 100000,
+        "rate_limit": 5000,
+        "next": [
+            "启动祭坛"
+        ]
+    },
+    "评价的叉叉": {
+        "recognition": "TemplateMatch",
+        "template": "评价的叉叉.png",
+        "action": "Click",
+        "next": [
+            "启动祭坛"
+        ]
+    },
+}

@@ -1,0 +1,93 @@
+{
+    //护符界面
+    "激活护符": {
+        "recognition": "OCR",
+        "expected": "激活护符",
+        "action": "Click",
+        "repeat": 2,
+        "repeat_delay": 1500,
+        "pre_delay": 1000,
+        "timeout": 5000,
+        "next": [
+            "护符1",
+            "护符2",
+            "护符3",
+            "护符4",
+        ],
+        "on_error": [
+            "护符界面叉叉"
+        ]
+    },
+    "护符1": {
+        "recognition": "TemplateMatch",
+        "template": "护符1.png",
+        "action": "Click",
+        "next": [
+            "激活"
+        ],
+        "timeout": 3000,
+        "on_error": [
+            "护符界面叉叉"
+        ]
+    },
+    "护符2": {
+        "recognition": "TemplateMatch",
+        "template": "护符2.png",
+        "action": "Click",
+        "next": [
+            "激活"
+        ],
+        "timeout": 3000,
+        "on_error": [
+            "护符界面叉叉"
+        ]
+    },
+    "护符3": {
+        "recognition": "TemplateMatch",
+        "template": "护符3.png",
+        "action": "Click",
+        "next": [
+            "激活"
+        ],
+        "timeout": 3000,
+        "on_error": [
+            "护符界面叉叉"
+        ]
+    },
+    "护符4": {
+        "recognition": "TemplateMatch",
+        "template": "护符4.png",
+        "action": "Click",
+        "timeout": 3000,
+        "next": [
+            "激活"
+        ],
+        "on_error": [
+            "护符界面叉叉"
+        ]
+    },
+    "激活": {
+        "recognition": "TemplateMatch",
+        "template": "激活.png",
+        "action": "Click",
+        "pre_delay": 2000,
+        "next": [
+            "地图页面"
+        ],
+        "timeout": 3000,
+        "on_error": [
+            "护符界面叉叉"
+        ]
+    },
+    "护符界面叉叉": {
+        "recognition": "TemplateMatch",
+        "template": "护符界面叉叉.png",
+        "action": "Click",
+        "next": [
+            "离开地点"
+        ],
+        "on_error": [
+            "各种事件"
+        ]
+    },
+}

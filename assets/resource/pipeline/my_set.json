@@ -1,0 +1,24 @@
+{
+    "局内设置按钮": {
+        "recognition": "TemplateMatch",
+        "template": "局内设置按钮.png",
+        "action": "Click",
+        "next": [
+            "局内叉叉"
+        ]
+    },
+    "局内叉叉": {
+        "recognition": "TemplateMatch",
+        "template": "局内叉叉.png",
+        "action": "Click",
+        "next": []
+    },
+    "MyTask3": {},
+    "MyTask4": {
+        "recognition": "Custom",
+        "custom_recognition": "my_reco_222",
+        "action": "Custom",
+        "custom_action": "my_action_111"
+    },
+    "OcrTask": {}
+}
