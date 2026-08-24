@@ -3,9 +3,8 @@
         "recognition": "TemplateMatch",
         "template": "next/",
         "action": "Click",
-        "repeat": 2,
+        "repeat": 4,
         "repeat_delay": 1000,
-        "green_mask": true,
         "next": [
             "各种事件"
         ]

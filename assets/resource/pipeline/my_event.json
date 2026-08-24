@@ -4,7 +4,7 @@
         "template": "紫色选项.png",
         "action": "Click",
         "pre_delay": 1000,
-        "repeat": 3,
+        "repeat": 4,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
@@ -98,27 +98,15 @@
             "各种事件"
         ]
     },
-    "元素石碑": {
+    "接触雷元素符文": {
         "recognition": "OCR",
-        "expected": "元素石碑",
-        "action": "DoNothing",
-        "next": [
-            "雷电"
-        ]
-    },
-    "雷电": {
-        "recognition": "OCR",
-        "expected": "雷电",
+        "expected": "接触雷元素符文",
         "action": "Click",
         "pre_delay": 1000,
         "repeat": 2,
         "repeat_delay": 1500,
         "next": [
             "各种事件"
-        ],
-        "timeout": 3000,
-        "on_error": [
-            "离开地点"
         ]
     },
     "困兽": {
