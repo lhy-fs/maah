@@ -5,7 +5,7 @@
         "action": "Click",
         "next": [
             "局内卡组按钮",
-            "放弃这轮游戏"
+            "放弃此轮游戏"
         ],
         "on_error": [
             "各种事件"
@@ -17,15 +17,15 @@
         "action": "Click",
         "next": [
             "局内设置按钮",
-            "放弃这轮游戏",
+            "放弃此轮游戏",
         ],
         "on_error": [
             "各种事件"
         ]
     },
-    "放弃这轮游戏": {
+    "放弃此轮游戏": {
         "recognition": "OCR",
-        "expected": "放弃这轮游戏",
+        "expected": "放弃此轮游戏",
         "action": "Click",
         "pre_delay": 1000,
         "next": [
