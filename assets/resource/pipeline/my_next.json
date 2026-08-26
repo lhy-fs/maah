@@ -15,4 +15,36 @@
             "各种事件"
         ]
     },
+    "a右": {
+        "recognition": "TemplateMatch",
+        "template": "a右.png",
+        "action": "Click",
+        "repeat": 4,
+        "repeat_delay": 1000,
+        "target_offset": [
+            -15,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "各种事件"
+        ]
+    },
+    "a左": {
+        "recognition": "TemplateMatch",
+        "template": "a左.png",
+        "action": "Click",
+        "repeat": 4,
+        "repeat_delay": 1000,
+        "target_offset": [
+            15,
+            0,
+            0,
+            0
+        ],
+        "next": [
+            "各种事件"
+        ]
+    },
 }
