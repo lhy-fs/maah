@@ -37,7 +37,9 @@
         "recognition": "TemplateMatch",
         "template": "局内叉叉.png",
         "action": "Click",
-        "next": []
+        "next": [
+            "各种事件"
+        ]
     },
     "MyTask3": {},
     "MyTask4": {
