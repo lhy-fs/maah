@@ -78,17 +78,17 @@
             "各种事件"
         ]
     },
-    "电音歌手": {
-        "recognition": "OCR",
-        "expected": "电音歌手",
-        "action": "DoNothing",
-        "next": [
-            "触发战斗"
-        ]
-    },
     "触发战斗": {
         "recognition": "OCR",
         "expected": "触发战斗",
+        "action": "Click",
+        "next": [
+            "各种事件"
+        ]
+    },
+    "真是不堪入耳的声音": {
+        "recognition": "OCR",
+        "expected": "真是不堪入耳的声音",
         "action": "Click",
         "pre_delay": 1000,
         "repeat": 2,
@@ -139,9 +139,9 @@
             "各种事件"
         ]
     },
-    "尽可能快的离开": {
+    "大肆搜刮": {
         "recognition": "OCR",
-        "expected": "尽可能快的离开",
+        "expected": "大肆搜刮",
         "action": "Click",
         "pre_delay": 1000,
         "repeat": 2,
@@ -193,6 +193,7 @@
         "pre_delay": 1000,
         "next": [
             "确定",
+            "触发战斗",
             "刻印"
         ],
         "timeout": 5000,
@@ -248,6 +249,20 @@
     "无畏斧卡牌": {
         "recognition": "TemplateMatch",
         "template": "无畏斧卡牌.png",
+        "action": "Click",
+        "pre_delay": 1000,
+        "next": [
+            "刻印",
+            "确定"
+        ],
+        "timeout": 5000,
+        "on_error": [
+            "各种事件"
+        ]
+    },
+    "头槌卡": {
+        "recognition": "TemplateMatch",
+        "template": "头槌卡.png",
         "action": "Click",
         "pre_delay": 1000,
         "next": [
